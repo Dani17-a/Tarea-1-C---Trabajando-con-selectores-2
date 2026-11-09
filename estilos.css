@@ -1,0 +1,23 @@
+h1 + p {
+  font-style: italic;
+  color: navy;
+}
+p:only-child {
+    color: darkgreen;
+}
+div p::first-line {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+	/* La primera línea del primero de los párrafos del div debe tenr color de fondo lightblue y estar en cursiva. */
+div p:first-child::first-line {
+    background-color: lightblue;
+    font-style: italic;
+}
+:lang(gl) {
+    color: coral;
+    text-align: right;
+}
+h2::before {
+    content: "3 refranes de ";
+}
